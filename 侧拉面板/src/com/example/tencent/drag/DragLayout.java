@@ -356,7 +356,7 @@ public class DragLayout extends FrameLayout {
 			// 1、触发一个平滑动画
 			if (mDragHelper.smoothSlideViewTo(mMainContent, finalLeft, 0)) {
 				// 如果返回true就说明没有移动到指定的位置，需要刷新页面
-				// 专门为动画准备的Invalidate，参数传this（child所在的ViewGroup）
+				// 专门为动画准备的Invalidate，参数传this        （child所在的ViewGroup）
 				ViewCompat.postInvalidateOnAnimation(this);
 			}
 		} else {
